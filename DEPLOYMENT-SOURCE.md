@@ -2,6 +2,8 @@
 
 This repository contains only the generated static deployment artifact for the synthetic Barn to Buyer concept demo.
 
-Source revision: `60f6b305ea7ef995a097fa912f1e4729d5a4eadc`
+Source repository: private `lkingma70/barn-to-buyer`
 
-The reusable TypeScript source remains in the private `lkingma70/barn-to-buyer` repository.
+Source revision: `bff29c6a8aeff27da5ccc46d93772f19e056b2fc`
+
+Verification: lint and strict TypeScript passed; Vitest 285/285; production build generated 17 static pages; Playwright and axe 168/168 across mobile, tablet, and desktop; fresh independent review passed.
