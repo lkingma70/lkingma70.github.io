@@ -1,0 +1,14 @@
+# Security headers for static hosts that read a `_headers` file
+# (Cloudflare Pages, Netlify). This file is copied verbatim into `out/` by the
+# static export. It is NOT active on hosts that ignore `_headers` (e.g. plain
+# Apache/Hostinger, Nginx) - see docs/DEPLOYMENT-SECURITY.md for those.
+#
+# These are conservative, non-breaking headers for a client-only static SPA.
+# No CSP is set by default because a static export ships hashed inline runtime
+# chunks; add one per host only after verifying it does not break the app.
+/*
+  X-Frame-Options: DENY
+  X-Content-Type-Options: nosniff
+  Referrer-Policy: no-referrer
+  Permissions-Policy: geolocation=(), microphone=(), camera=()
+  X-Robots-Tag: noindex, nofollow
